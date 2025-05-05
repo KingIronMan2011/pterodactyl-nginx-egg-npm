@@ -7,13 +7,10 @@ ARG PHP_VERSION
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get install -y \
-        git \
-        npm \
-        apt-transport-https \
-        lsb-release \
-        ca-certificates \
-        wget \
-        nginx \
+        curl gnupg2 ca-certificates \
+        build-essential python3 pkg-config \
+        git apt-transport-https lsb-release wget \
+        nginx nodejs npm \
     && ARCH=$(uname -m) \
     && if [ "$ARCH" = "x86_64" ]; then \
         wget -O /tmp/cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb; \
