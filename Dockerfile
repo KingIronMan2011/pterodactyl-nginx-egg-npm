@@ -8,6 +8,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get install -y \
         git \
+        npm \
         apt-transport-https \
         lsb-release \
         ca-certificates \
