@@ -46,7 +46,7 @@
             "name": "PHP Version",
             "description": "Select the correct PHP version! See the tag behind the Docker image.  \r\nExample: Selected image (ghcr.io\/ym0t\/nginx_php:8.4)\r\nEnter in the field: 8.4",
             "env_variable": "PHP_VERSION",
-            "default_value": "",
+            "default_value": "8.4",
             "user_viewable": true,
             "user_editable": true,
             "rules": "required|string|max:3",

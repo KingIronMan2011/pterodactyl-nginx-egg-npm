@@ -1,6 +1,6 @@
 FROM debian:bookworm-slim
 
-LABEL author="Ym0t" maintainer="YmoT@tuta.com"
+LABEL author="KingIronMan2011" maintainer="IronMan@king-mc.de"
 
 ARG PHP_VERSION
 ARG NODE_MAJOR
